@@ -8,6 +8,12 @@ else
 "#{base_title} | #{@title}"
 end
 end
+
+
+def logo
+image_tag("watermark.jpg", :alt => "Sample App", :class => "round")
+end
+
 end
 
 
