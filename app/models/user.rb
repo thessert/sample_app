@@ -15,6 +15,10 @@ class User < ActiveRecord::Base
 has_many :microposts, :dependent => :destroy  
   
   email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+
+def feed
+microposts
+end
  
    validates :name, :presence => true,
 :length => { :maximum => 50 }
@@ -47,8 +51,6 @@ def self.authenticate_with_salt(id, cookie_salt)
 user = find_by_id(id)
 (user && user.salt == cookie_salt) ? user : nil
 end
-
-private
 
 def encrypt_password
 self.salt = make_salt unless has_password?(password)
