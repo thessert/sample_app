@@ -256,7 +256,7 @@ $(document).ready(function(){
             <aside class="sidebar fltright">
             
             	 <div class="widget">
-                	<h2 class="acc_trigger"><a href="#"><img src="img/result.png" alt=""></a></h2>
+                	<h2 class="acc_trigger active"><a href="#"><img src="img/result.png" alt=""></a></h2>
                     <div class="widget_box2 acc_container">
                     	<ul>
                         	<li>
@@ -316,7 +316,7 @@ $(document).ready(function(){
             
             	<div class="widget">
 
-                	<h2 class="acc_trigger"><a href="#"><img src="img/my_bet.png" alt=""></a></h2>
+                	<h2 class="acc_trigger active"><a href="#"><img src="img/my_bet.png" alt=""></a></h2>
                     <div class="widget_box acc_container">
                     	<ul>
                         	<li>

@@ -1,25 +1,46 @@
-<header>
-<%= link_to logo, root_path %>
-
-<nav class="round">
+<header class="header_wrap"><!--header_wrap-->
+    <div class="header_container">
+	<div class="topHeader">
+		<div class="logo fltleft">
+			<a href="#"><img src="img/logo.png" alt=""></a></div>
+  			<div class="headerRight fltright">
+				<nav class="topNav">
 
 <ul>
-<li><%= link_to "Home", root_path %></li>
+	<li class="nobr"><%= link_to "Home", root_path %></li>
 <% if signed_in? %>
-
-<li><%= link_to "Users", users_path %></li>
-<li><%= link_to "Profile", current_user %></li>
-<li><%= link_to "Settings", edit_user_path(current_user) %></li>
+	<li class="nobr"><%= link_to "Users", users_path %></li>
+	<li class="nobr"><%= link_to "Profile", current_user %></li>
+	<li class="nobr"><%= link_to "Settings", edit_user_path(current_user) %></li>
 <% end %>
-<li><%= link_to "Help", help_path %></li>
+	<li class="nobr"><%= link_to "Help", help_path %></li>
 <% if signed_in? %>
-<li><%= link_to "Sign out", signout_path, :method => :delete %></li>
+<li class="nobr"><%= link_to "Sign out", signout_path, :method => :delete %></li>
 <% else %>
-<li><%= link_to "Sign in", signin_path %></li>
+<li class="nobr"><%= link_to "Sign in", signin_path %></li>
 <% end %>
 </ul>
 
+ <div class="clearfix"></div>
+ </nav>
+  <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+  <div class="bottomHeader">
 
-</nav>
-</header>
+            	<h2>You Are Playing: <strong>The Monkey</strong></h2>
+                <span>
+             	<a href="#"><img src="img/share.jpg" class="share" alt=""></a>
+                <a href="#"><img src="img/icon1.jpg" alt="" class="social"></a> 
+                <a href="#"><img src="img/icon2.jpg" alt="" class="social"></a> 
+                <a href="#"><img src="img/icon3.jpg" alt="" class="social"></a> 
+               </span>
+            </div>
+        </div>
 
+    </header>
+            
+              
+                       
+                   
