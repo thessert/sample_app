@@ -2,7 +2,7 @@
 // This file is automatically included by javascript_include_tag :defaults
 
 
-document.ready(function(){
+$(document).ready(function(){
 	
 	//Set default open/close settings
 	$('.acc_container').hide(); //Hide/close all containers

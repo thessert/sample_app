@@ -1,6 +1,6 @@
 <table class="profile" summary="Profile information">
 <tr>
-<td class="old">
+<td class="main">
 <h1>
 <%= gravatar_for @user %>
 <%= @user.name %>
